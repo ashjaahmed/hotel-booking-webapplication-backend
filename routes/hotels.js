@@ -2,6 +2,11 @@ const express = require('express');
 const router = express.Router();
 const hotels = require('../data/hotels.json');
 
+
+
+//Protect all the hotels routes
+router.use(authenticateToken);
+
 // List all hotels
 router.get('/', (req, res) => {
   res.json(hotels);
