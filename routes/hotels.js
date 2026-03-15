@@ -1,7 +1,7 @@
 const express = require('express');
 const router = express.Router();
 const hotels = require('../data/hotels.json');
-
+const {authenticateToken}=require("../middleware/authMiddleware")
 
 
 //Protect all the hotels routes
