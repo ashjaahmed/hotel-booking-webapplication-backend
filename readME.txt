@@ -1,5 +1,5 @@
 hotel-booking-app/
-│── index.js
+│── server.js
 │── routes/
 │    ├── auth.js
 │    ├── hotels.js
